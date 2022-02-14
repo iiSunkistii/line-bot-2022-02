@@ -240,7 +240,7 @@ def getTotalSentMessageCount():
 
 
 def getTodayCovid19Message():
-    response = requests.get("https: // covid - 19.nchc.org.tw / api / covid19?CK = covid - 19 @ nchc.org.tw & querydata = 4001 & limited = TWN")
+    response = requests.get("https://covid-19.nchc.org.tw/api/covid19?CK=covid-19@nchc.org.tw&querydata=4001&limited=TWN")
     date = response.json()[0]["a04"]
     total_count = response.json()[0]["a05"]
     count = response.json()[0]["a06"]
